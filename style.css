@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.container {
+    background: #1e1e1e;
+    padding: 30px;
+    border-radius: 12px;
+    width: 350px;
+}
+
+h1 {
+    text-align: center; /* CENTRALIZADO */
+}
+
+input, select, button {
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+}
+
+button {
+    background-color: #000;
+    color: white;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+/* ITEM */
+li {
+    margin-top: 15px;
+    padding: 12px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* TEXTO CENTRALIZADO */
+.task-text {
+    text-align: center;
+    font-size: 16px;
+}
+
+/* BOTÕES */
+.actions {
+    display: flex;
+    gap: 10px;
+}
+
+.actions button {
+    flex: 1;
+    background-color: black;
+    color: white;
+}
+
+/* DATA */
+.deadline {
+    font-size: 12px;
+    color: white;
+    text-align: left;
+}
+
+/* PRIORIDADES */
+.alta { background-color: #ff4d4d; }
+.media { background-color: #ffaa00; }
+.baixa { background-color: #4CAF50; }
+
+/* CONCLUÍDA */
+.completed {
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+
+/* ATRASADA */
+.overdue {
+    filter: brightness(70%);
+}
+
+/* PAGINAÇÃO */
+#pagination {
+    display: flex;
+    gap: 8px;
+    margin-top: 15px;
+    justify-content: center;
+}
+
+.page-btn {
+    width: 25px;
+    height: 25px;
+    background: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.page-btn.active {
+    background: white;
+    color: black;
+}
